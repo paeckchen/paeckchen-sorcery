@@ -1,9 +1,16 @@
 {
-  "name": "sorcery",
+  "name": "paeckchen-sorcery",
   "description": "Resolve a chain of sourcemaps back to the original source",
-  "version": "0.10.0",
+  "version": "0.1.0",
   "author": "Rich Harris",
-  "repository": "https://github.com/Rich-Harris/sorcery",
+  "contributors": [
+    {
+      "name": "Markus Wolf",
+      "email": "knister.peter@shadowrun-clan.de",
+      "url": "https://github.com/KnisterPeter"
+    }
+  ],
+  "repository": "https://github.com/paeckchen/paeckchen-sorcery",
   "main": "dist/sorcery.cjs.js",
   "jsnext:main": "dist/sorcery.es6.js",
   "license": "MIT",
