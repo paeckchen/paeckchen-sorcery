@@ -1,4 +1,9 @@
-# sorcery.js
+# paeckchen-sorcery.js
+
+**Shameless fork of [sorcery](https://github.com/Rich-Harris/sorcery) by Rich Harris.
+This fork is patched to get around some problems while integrating it in [paeckchen](https://github.com/paeckchen/paeckchen).**
+
+---
 
 Sourcemaps are great - if you have a JavaScript file, and you minify it, your minifier can generate a map that lets you debug as though you were looking at the original uncompressed code.
 
