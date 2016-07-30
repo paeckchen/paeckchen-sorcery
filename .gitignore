@@ -4,3 +4,4 @@ cli-test
 .tmp
 dist
 coverage
+npm-debug.log
