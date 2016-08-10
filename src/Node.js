@@ -69,6 +69,8 @@ Node.prototype = {
 			}
 
 			this.content = sourcesContentByPath[ this.file ];
+		} else if ( !sourcesContentByPath[ this.file ] ) {
+			sourcesContentByPath[ this.file ] = this.content;
 		}
 
 		const map = getMap( this, sourceMapByPath, true );
@@ -173,7 +175,8 @@ function getContent ( node, sourcesContentByPath ) {
 
 	if ( !node.content ) {
 		return readFile( node.file, { encoding: 'utf-8' })
-			.catch(err => `// error reading file ${node.file}`);
+			.catch(err => `// error reading file ${node.file}`)
+			.then(src => sourcesContentByPath[ node.file ] = src)
 	}
 
 	return Promise.resolve( node.content );
