@@ -1,6 +1,6 @@
 import buble from 'rollup-plugin-buble';
 import commonjs from 'rollup-plugin-commonjs';
-import npm from 'rollup-plugin-npm';
+import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
 	entry: 'src/index.js',
@@ -8,7 +8,7 @@ export default {
 		commonjs({
 			include: 'node_modules/**'
 		}),
-		npm({
+		nodeResolve({
 			jsnext: true,
 			main: true,
 			skip: [ 'path', 'sander', 'buffer-crc32' ]
