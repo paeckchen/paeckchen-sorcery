@@ -6,6 +6,13 @@ node_js:
 cache:
   directories:
   - node_modules
+branches:
+  only:
+    - master
+    - /^greenkeeper-.*$/
+notifications:
+  email:
+    on_success: never
 env:
   global:
     - BUILD_TIMEOUT=10000
