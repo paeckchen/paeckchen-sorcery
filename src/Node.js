@@ -1,5 +1,5 @@
 import { dirname, resolve } from 'path';
-import { readFile, readFileSync, Promise } from 'sander';
+import { readFile, readFileSync } from 'sander';
 import { decode } from 'sourcemap-codec';
 import getMap from './utils/getMap.js';
 

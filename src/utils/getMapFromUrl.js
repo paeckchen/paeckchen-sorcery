@@ -1,5 +1,5 @@
 import { dirname, resolve } from 'path';
-import { readFile, readFileSync, Promise } from 'sander';
+import { readFile, readFileSync } from 'sander';
 import atob from './atob.js';
 import SOURCEMAPPING_URL from './sourceMappingURL.js';
 
