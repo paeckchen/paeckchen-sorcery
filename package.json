@@ -24,7 +24,7 @@
     "buble": "^0.14.0",
     "codecov.io": "^0.1.6",
     "coffee-script": "^1.10.0",
-    "eslint": "^3.11.1",
+    "eslint": "^3.12.1",
     "glob": "^7.0.3",
     "in-publish": "2.0.0",
     "istanbul": "^0.4.3",
